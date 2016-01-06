@@ -110,3 +110,50 @@ footer{
    text-align: center;
    padding-top: 30px;
  }
+
+ footer ul{
+   list-style-type: none;
+   margin-top: 15px;
+ }
+
+ .finalfooter article{
+   float:left;
+   width: 25%;
+   height: 235px;
+ }
+
+ .finalfooter{
+   width: 900px;
+   margin: auto;
+   height: 235px;
+   background-color: #fafafa;
+   padding-top: 15px;
+ }
+
+ .finalfooter a, nav a{
+   text-decoration: none;
+   color:inherit;
+ }
+
+ .barrenav a:hover{
+    color: black;
+    background: #ffc;
+    text-decoration: underline;
+}
+
+.barrenav li{
+    float: left;
+    position: relative;
+}
+
+.Sousmenu{
+    display: none; /* Masque la sous-liste */
+    position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
+    left: 0; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur */
+    margin-top: -2px;
+    /*transition: .8s all .3s;*/
+  }
+
+  .barrenav li:hover .Sousmenu {
+      display: block; /* Affiche cette sous-liste au survol de son conteneur */
+  }
