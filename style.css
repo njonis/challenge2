@@ -8,8 +8,13 @@
 
  body{
    background-image: url(bg.png);
-   font-style: "helvetica Neue";
+   font-family: "helvetica Neue", sans-serif;
    font-size: 13px;
+ }
+
+ h1{
+   font-family: "Terminal Dosis", sans-serif;
+   font-size: 52px;
  }
 
  header{
@@ -39,9 +44,9 @@
 
  nav li{
    float: left;
-   width: 120px;
+   width: 150px;
    margin-top: 20px;
-   margin-left: 30px;
+   text-align: center;
  }
 
  header h1{
@@ -50,8 +55,15 @@
 
  #loupe{
    float: right;
+   padding-top: 6px;
+    padding-right: 10px;
+ }
+
+ .lienloupe{
+   float: right;
    width: 34px;
    height: 22px;
+   margin-top: 25px;
    background-color: #fafafa;
  }
 
@@ -95,7 +107,9 @@ footer{
   width: 994px;
   margin: auto;
   background-color: white;
+  padding-top: 20px;
 }
+
  .barrefinale{
   height: 40px;
   background-color: #fafafa;
@@ -128,9 +142,10 @@ footer{
    height: 235px;
    background-color: #fafafa;
    padding-top: 15px;
+   padding-left: 20px;
  }
 
- .finalfooter a, nav a{
+ .finalfooter a, nav a, p a{
    text-decoration: none;
    color:inherit;
  }
@@ -138,7 +153,7 @@ footer{
  .barrenav a:hover{
     color: black;
     background: #ffc;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .barrenav li{
@@ -146,14 +161,28 @@ footer{
     position: relative;
 }
 
+.menufinal{
+  height: 40px;
+}
+
 .Sousmenu{
     display: none; /* Masque la sous-liste */
     position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
-    left: 0; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur */
-    margin-top: -2px;
-    /*transition: .8s all .3s;*/
+    margin-top: 15px;
+    background-color: #f4f4f4;
   }
 
   .barrenav li:hover .Sousmenu {
       display: block; /* Affiche cette sous-liste au survol de son conteneur */
   }
+
+.sousmenuitem{
+  padding-bottom: 10px;
+}
+
+.container{
+  box-shadow: 0px 0px 11px 3px #163461;
+  width: 994px;
+  margin: auto;
+  margin-top: 30px;
+}
